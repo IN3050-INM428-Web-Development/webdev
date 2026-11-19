@@ -1,5 +1,188 @@
-/*
-  This file should contain the COMPILED output of styles.scss.
-  Do not hand-edit this file directly — edit styles.scss and
-  recompile instead, so the two files stay in sync.
-*/
+﻿/* Basic structure styles. The full colour scheme and components come later. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #222222;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  color: #0b57d0;
+}
+
+a:hover {
+  color: #083f99;
+}
+
+header {
+  padding: 1rem;
+  background-color: #222222;
+  color: #ffffff;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #ffd166;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  color: #555555;
+  font-size: 0.9rem;
+}
+
+table {
+  width: 100%;
+  min-width: 34rem;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+
+caption {
+  padding: 0.5rem 0;
+  text-align: left;
+  font-weight: 700;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  border: 1px solid #bbbbbb;
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  background-color: #eeeeee;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+form {
+  max-width: 45rem;
+}
+
+fieldset {
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border: 1px solid #bbbbbb;
+}
+
+legend {
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #888888;
+  font: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #222222;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer h2 {
+  font-size: 1rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  color: #222222;
+}
