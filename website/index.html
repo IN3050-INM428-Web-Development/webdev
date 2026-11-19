@@ -33,8 +33,125 @@
   </header>
 
   <main id="main" tabindex="-1">
-    <h1>Al Sah-him Archery Club</h1>
-    <p>[Placeholder: home page content]</p>
+
+    <!-- Hero: club name, tagline and the two main calls to action -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Established <time datetime="1013">1013 <abbr title="Common Era">CE</abbr></time> &middot; Central London</p>
+        <h1 id="hero-title">Al Sah-him Archery Club</h1>
+        <p class="tagline">Archery in central London since 1013 CE.</p>
+        <p class="hero-intro">Whether you are picking up a bow for the first time, shooting with us every week, or visiting from another club, you will find a warm welcome and a well-run range.</p>
+        <p class="hero-actions">
+          <a class="button button-primary" href="join.html">Try archery</a>
+          <a class="button button-secondary" href="competitions.html">Visit as a club</a>
+        </p>
+      </div>
+      <picture class="hero-media">
+        <source media="(max-width: 47.99rem)"
+                srcset="assets/images/archer-sunset-square-480.jpg 480w,
+                        assets/images/archer-sunset-square-800.jpg 800w"
+                sizes="100vw">
+        <img src="assets/images/archer-sunset-1600.jpg"
+             srcset="assets/images/archer-sunset-800.jpg 800w,
+                     assets/images/archer-sunset-1600.jpg 1600w"
+             sizes="(min-width: 60rem) 50vw, 100vw"
+             alt="An archer at full draw on an outdoor range at sunset"
+             width="1600" height="900" fetchpriority="high">
+      </picture>
+    </section>
+
+    <!-- Audience signposting: one card for each of the club's three audiences -->
+    <section class="audiences" aria-labelledby="audiences-title">
+      <div class="section-heading">
+        <p class="eyebrow">Start here</p>
+        <h2 id="audiences-title">Where would you like to begin?</h2>
+        <p>Three ways into the club, whichever side of the shooting line you are on.</p>
+      </div>
+      <ul class="audience-cards">
+        <li>
+          <article class="audience-card">
+            <p class="card-icon"><i class="fa-solid fa-user-plus" aria-hidden="true"></i></p>
+            <h3><a href="join.html">New to archery?</a></h3>
+            <p>Six-week beginner inductions, junior academies and a friendly welcome for complete beginners.</p>
+            <p class="card-cta"><a href="join.html">Join the club <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
+          </article>
+        </li>
+        <li>
+          <article class="audience-card">
+            <p class="card-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></p>
+            <h3><a href="members.html">Current members</a></h3>
+            <p>Range hours, club news, safety rules and the people to call when you need a hand.</p>
+            <p class="card-cta"><a href="members.html">Members' hub <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
+          </article>
+        </li>
+        <li>
+          <article class="audience-card">
+            <p class="card-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></p>
+            <h3><a href="competitions.html">Visiting clubs</a></h3>
+            <p>Upcoming competitions, entry details and how to find our central London range.</p>
+            <p class="card-cta"><a href="competitions.html">Compete with us <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- History: the club's own account of its origins and the Talia era -->
+    <section id="history" class="split-section" aria-labelledby="history-title">
+      <div class="split-text">
+        <p class="eyebrow">Our story</p>
+        <h2 id="history-title">A club with a thousand-year story</h2>
+        <p>Al Sah-him Archery Club traces its roots back to <time datetime="1013">1013 <abbr title="Common Era">CE</abbr></time>, when it began as a gathering of elite marksmen dedicated to mastering the traditional bow.</p>
+        <p>Under the legendary Master Bowman <strong>Talia</strong>, the club established rigorous training disciplines and tactical traditions that still influence our practices today.</p>
+        <p>Over the centuries we have adapted from a medieval combat guild into a modern sporting institution, preserving that ancient focus alongside contemporary techniques. Today the club is based in central London, with weather-sheltered indoor ranges and outdoor shooting spaces.</p>
+        <p><a class="text-link" href="members.html#news">See what the club is doing now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
+      </div>
+      <figure class="split-media">
+        <img src="assets/images/target-gold-800.jpg"
+             srcset="assets/images/target-gold-800.jpg 800w,
+                     assets/images/target-gold-1600.jpg 1600w"
+             sizes="(min-width: 60rem) 50vw, 100vw"
+             alt="Several arrows grouped in the gold centre of an outdoor target"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption>Arrows grouped in the gold at an outdoor target.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Contact and opening hours: the information visitors need before a first trip -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="contact-details">
+        <p class="eyebrow">Find us</p>
+        <h2 id="contact-title">Visit the club</h2>
+        <p>We are based at Northampton Square in central London, with weather-sheltered indoor ranges and outdoor shooting spaces.</p>
+        <address>
+          <strong>Al Sah-him Archery Club</strong><br>
+          Northampton Square<br>
+          London EC1V 0HB<br>
+          <a href="tel:+442079464587">020 7946 4587</a><br>
+          <a href="mailto:archery@example.org">archery@example.org</a>
+        </address>
+        <p><a class="button button-secondary" href="https://www.google.com/maps/search/?api=1&amp;query=Northampton+Square+London+EC1V+0HB">Get directions</a></p>
+      </div>
+      <div class="opening-hours">
+        <h3>Range opening hours</h3>
+        <dl>
+          <div>
+            <dt>Tuesday&ndash;Friday</dt>
+            <dd><time datetime="12:00">12:00</time>&ndash;<time datetime="21:00">21:00</time></dd>
+          </div>
+          <div>
+            <dt>Saturday&ndash;Sunday</dt>
+            <dd><time datetime="09:00">09:00</time>&ndash;<time datetime="18:00">18:00</time></dd>
+          </div>
+          <div>
+            <dt>Monday</dt>
+            <dd>Closed</dd>
+          </div>
+        </dl>
+        <p><strong>Closed Mondays</strong> for range maintenance.</p>
+        <p>Members can reserve a shooting lane up to seven days in advance through the online portal.</p>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
