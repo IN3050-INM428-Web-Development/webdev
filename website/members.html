@@ -33,8 +33,163 @@
   </header>
 
   <main id="main" tabindex="-1">
-    <h1>Members</h1>
-    <p>[Placeholder: members page content]</p>
+
+    <section class="page-intro" aria-labelledby="members-title">
+      <p class="eyebrow">Members' hub</p>
+      <h1 id="members-title">Everything you need for a good session</h1>
+      <p class="lead">Range hours, club news, safety rules and the people to call when you need a hand.</p>
+    </section>
+
+    <!-- In-page navigation for this longer page -->
+    <nav class="page-nav" aria-label="On this page">
+      <p class="page-nav-title">On this page</p>
+      <ul>
+        <li><a href="#sessions">Sessions and booking</a></li>
+        <li><a href="#news">Club news</a></li>
+        <li><a href="#safety">Range rules</a></li>
+        <li><a href="#help">Need help?</a></li>
+      </ul>
+    </nav>
+
+    <section id="sessions" class="sessions" aria-labelledby="sessions-title">
+      <div class="section-heading">
+        <p class="eyebrow">On the range</p>
+        <h2 id="sessions-title">Session times and booking</h2>
+        <p>The range is open six days a week. Coached sessions run alongside open shooting; check the times below before you travel.</p>
+      </div>
+      <div class="table-scroll" role="region" aria-label="Range opening hours and club sessions table" tabindex="0">
+        <table>
+          <caption>Range opening hours and club sessions</caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Range open</th>
+              <th scope="col">Club sessions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Monday</th>
+              <td>Closed</td>
+              <td>Range maintenance</td>
+            </tr>
+            <tr>
+              <th scope="row">Tuesday&ndash;Friday</th>
+              <td><time datetime="12:00">12:00</time>&ndash;<time datetime="21:00">21:00</time></td>
+              <td>[Placeholder: coached session times]</td>
+            </tr>
+            <tr>
+              <th scope="row">Saturday&ndash;Sunday</th>
+              <td><time datetime="09:00">09:00</time>&ndash;<time datetime="18:00">18:00</time></td>
+              <td>[Placeholder: coached session times]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Booking:</strong> members can reserve a shooting lane up to seven days in advance through the online portal. Choose an 18&nbsp;m indoor target lane or a flexible outdoor distance.</p>
+      <p class="note">[Placeholder: link to the online booking portal].</p>
+      <figure class="wide-figure">
+        <img src="assets/images/bows-line-800.jpg"
+             srcset="assets/images/bows-line-800.jpg 800w,
+                     assets/images/bows-line-1600.jpg 1600w"
+             sizes="(min-width: 60rem) 70vw, 100vw"
+             alt="A row of bows and stabilisers on the shooting line"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption>Bows on the shooting line.</figcaption>
+      </figure>
+    </section>
+
+    <section id="news" class="news" aria-labelledby="news-title">
+      <div class="section-heading">
+        <p class="eyebrow">What's on</p>
+        <h2 id="news-title">Club news</h2>
+        <p>Results, workshops and socials from around the club.</p>
+      </div>
+
+      <article class="news-item">
+        <header class="news-header">
+          <p class="news-date"><time datetime="2026-11-15">Sunday 15 November 2026</time></p>
+          <h3>The Talia Memorial Cup</h3>
+        </header>
+        <p>Our historic annual club championship returned to honour Master Bowman Talia, the leader who shaped so much of the club's training tradition.</p>
+        <p>[Placeholder: results, winners and scores from the 2026 competition].</p>
+      </article>
+
+      <article class="news-item">
+        <header class="news-header">
+          <p class="news-date"><time datetime="2026-11-19">Thursday 19 November 2026</time></p>
+          <h3>Indoor distance masterclass</h3>
+        </header>
+        <p>A form-correction workshop tailored to 18-metre winter tournament preparation, led by our coaching team.</p>
+        <p>[Placeholder: booking details, start time and coach name].</p>
+        <figure class="news-media">
+          <img src="assets/images/coach-form-800.jpg"
+               srcset="assets/images/coach-form-800.jpg 800w,
+                       assets/images/coach-form-1600.jpg 1600w"
+               sizes="(min-width: 60rem) 70vw, 100vw"
+               alt="A coach adjusting an archer's bow arm at the shooting line"
+               width="1600" height="1067" loading="lazy" decoding="async">
+          <figcaption>Form correction is at the heart of our advanced coaching.</figcaption>
+        </figure>
+      </article>
+
+      <article class="news-item">
+        <header class="news-header">
+          <p class="news-date"><time datetime="2026-11-28">Saturday 28 November 2026</time></p>
+          <h3>Equipment maintenance workshop</h3>
+        </header>
+        <p>A hands-on session covering bow tuning, string waxing and arrow fletching. Bring your own kit if you would like to work on it.</p>
+        <p>[Placeholder: start time, location and what to bring].</p>
+      </article>
+
+      <article class="news-item">
+        <header class="news-header">
+          <p class="news-date"><time datetime="2026-12-09">Wednesday 9 December 2026</time></p>
+          <h3>Annual General Meeting</h3>
+        </header>
+        <p>The club's <abbr title="Annual General Meeting">AGM</abbr> will review the 2026 milestones and vote on the 2027 committee.</p>
+        <p>[Placeholder: start time, venue and how to submit a motion].</p>
+      </article>
+
+      <article class="news-item">
+        <header class="news-header">
+          <p class="news-date"><time datetime="2026-12-12">Saturday 12 December 2026</time></p>
+          <h3>Yuletide social and feast</h3>
+        </header>
+        <p>A holiday celebration and dinner for members and their families.</p>
+        <p>[Placeholder: venue, ticket price and booking deadline].</p>
+      </article>
+    </section>
+
+    <section id="safety" class="safety" aria-labelledby="safety-title">
+      <div class="section-heading">
+        <p class="eyebrow">Range rules</p>
+        <h2 id="safety-title">Safety on the range</h2>
+        <p>Archery is a safe sport <em>when everyone follows the range officer</em>. These rules apply to members, guests and visiting clubs.</p>
+      </div>
+      <ol class="rules-list">
+        <li><strong>Wait for the signal.</strong> Only shoot when the range officer gives the command.</li>
+        <li><strong>Stay behind the line.</strong> Never cross the shooting line while anyone is shooting.</li>
+        <li><strong>Collect arrows together.</strong> Only walk forward when the range is declared clear.</li>
+        <li><strong>Check your kit.</strong> Inspect bows, strings and arrows before you shoot; report damage to the range officer.</li>
+        <li><strong>Nock on the line.</strong> Only nock an arrow when you are on the shooting line and cleared to shoot.</li>
+        <li><strong>Walk, do not run.</strong> Watch for arrows in the ground when collecting.</li>
+      </ol>
+      <p class="note">[Placeholder: club-specific whistle commands, range layout and emergency procedure].</p>
+    </section>
+
+    <aside id="help" class="help-aside" aria-labelledby="help-title">
+      <p class="eyebrow">Need a hand?</p>
+      <h2 id="help-title">Contact the club</h2>
+      <p>For membership questions, session details or anything else, get in touch with the club team.</p>
+      <address>
+        <a href="mailto:archery@example.org">archery@example.org</a><br>
+        <a href="tel:+442079464587">020 7946 4587</a>
+      </address>
+      <p><strong>On the range?</strong> Speak to the range officer on duty.</p>
+      <p><a class="text-link" href="competitions.html">Visiting from another club? See competition details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
+    </aside>
+
   </main>
 
   <footer class="site-footer">
